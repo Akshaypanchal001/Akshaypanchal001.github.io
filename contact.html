@@ -31,7 +31,8 @@
 
   <h2>Send Us Your Requirement</h2>
 <form id="contactForm">
-  <input type="hidden" name="_subject" value="New PCB enquiry from CoreCircuits website">
+
+  <input type="hidden" name="_subject" value="New PCB Enquiry – CoreCircuits Website">
 
   <label>Your Name</label>
   <input type="text" name="name" required>
@@ -40,7 +41,16 @@
   <input type="email" name="email" required>
 
   <label>Your Message</label>
-  <textarea name="message" rows="5" placeholder="Tell us about your PCB requirement"></textarea>
+  <textarea name="message" rows="5"
+    placeholder="Please mention quantity, layers, material, finish, timeline"></textarea>
+
+  <label>Upload PCB Files</label>
+  <input type="file" name="attachment" multiple
+    accept=".zip,.rar,.pdf,.xls,.xlsx,.csv,.txt,.png,.jpg,.jpeg,.sch">
+
+  <small>
+    Allowed: Gerber (ZIP), BOM, Pick & Place, Schematic, Images (Max ~10MB)
+  </small>
 
   <button type="submit">Send Message</button>
 </form>
