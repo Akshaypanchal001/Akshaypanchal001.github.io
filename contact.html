@@ -1,21 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Thank You | CoreCircuits</title>
+  <title>Contact Us | CoreCircuits</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    /* Specific styling for the success message icon */
-    .success-icon {
-        color: #28a745; /* Green color for success */
-        font-size: 50px;
-        text-align: center;
-        display: block;
-        margin-bottom: 20px;
-    }
-    .center-text {
-        text-align: center;
-    }
-  </style>
 </head>
 <body>
 
@@ -29,25 +16,35 @@
   </nav>
 </header>
 
-<div class="container center-text">
-  <span class="success-icon">&#10004;</span>
-  
-  <h1>Message Sent Successfully!</h1>
+<div class="container">
+  <h1>Contact / Request a Quote</h1>
 
   <p>
-    Thank you for contacting <strong>CoreCircuits</strong>. 
+    Please contact us for PCB design, manufacturing, or assembly requirements.
+    You can email us directly or submit the form below.
   </p>
-  
+
   <p>
-    We have received your enquiry regarding your PCB requirements. 
-    Our technical team will review your details and get back to you shortly via email.
+    <strong>Email:</strong> info@corecircuits.in<br>
+    <strong>Location:</strong> Ahmedabad, India
   </p>
 
-  <br>
+  <h2>Send Us Your Requirement</h2>
+<form action="https://formspree.io/f/xbdrgbvl" method="POST">
+  <input type="hidden" name="_next" value="https://akshaypanchal001.github.io/thank-you.html">
+  <input type="hidden" name="_subject" value="New PCB enquiry from CoreCircuits website">
 
-  <a href="index.html">
-    <button style="width: auto; padding-left: 30px; padding-right: 30px;">Back to Home</button>
-  </a>
+  <label>Your Name</label>
+  <input type="text" name="name" required>
+
+  <label>Your Email</label>
+  <input type="email" name="email" required>
+
+  <label>Your Message</label>
+  <textarea name="message" rows="5" placeholder="Tell us about your PCB requirement"></textarea>
+
+  <button type="submit">Send Message</button>
+</form>
 
 </div>
 
