@@ -6,21 +6,59 @@
 </head>
 <body>
 
-<header class="main-header">
-  <div class="header-top">
-    <div class="logo-area">
-      <img src="logo.png" alt="CoreCircuits Logo" class="site-logo">
-      <span class="brand-name">CoreCircuits</span>
-    </div>
+<!-- HEADER -->
+<header class="site-header">
+  <div class="logo-center">
+    <img src="logo.png" alt="CoreCircuits Logo" class="main-logo">
+    <h1>CoreCircuits</h1>
   </div>
 
-  <nav class="header-nav">
-    <a href="pcb-design.html">PCB Design</a>
-    <a href="pcb-manufacturing.html">PCB Manufacturing</a>
-    <a href="pcb-assembly.html">PCB Assembly</a>
-    <a href="contact.html">Contact</a>
+  <nav class="tab-nav">
+    <button class="tab-link active" onclick="openTab('design')">PCB Design</button>
+    <button class="tab-link" onclick="openTab('manufacturing')">PCB Manufacturing</button>
+    <button class="tab-link" onclick="openTab('assembly')">PCB Assembly</button>
+    <button class="tab-link" onclick="openTab('contact')">Contact</button>
   </nav>
 </header>
+
+<!-- TAB CONTENT -->
+<main class="tab-content-area">
+
+  <section id="design" class="tab-content active">
+    <h2>PCB Design Services</h2>
+    <p>
+      Schematic design, PCB layout, component library creation,
+      and DFM/DFA support for reliable manufacturing.
+    </p>
+  </section>
+
+  <section id="manufacturing" class="tab-content">
+    <h2>PCB Manufacturing</h2>
+    <p>
+      Prototype and production PCB fabrication with controlled
+      quality, standard materials, and reliable delivery.
+    </p>
+  </section>
+
+  <section id="assembly" class="tab-content">
+    <h2>PCB Assembly</h2>
+    <p>
+      SMT, THT, and mixed technology assembly with inspection
+      and testing support.
+    </p>
+  </section>
+
+  <section id="contact" class="tab-content">
+    <h2>Contact CoreCircuits</h2>
+    <p>
+      Email: info@corecircuits.in<br>
+      Location: Ahmedabad, India
+    </p>
+    <a href="contact.html" class="cta-btn">Request a Quote</a>
+  </section>
+
+</main>
+
 
 
 <div class="container">
