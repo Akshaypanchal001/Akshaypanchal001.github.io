@@ -268,3 +268,33 @@ footer {
   font-weight: 600;
   color: #000000;
 }
+/* =========================
+   Certifications Strip
+========================= */
+
+.cert-strip {
+  margin-top: 40px;
+  padding: 20px 0;
+  background: #f9fbfd;
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.cert-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cert-container span {
+  padding: 8px 16px;
+  background: #ffffff;
+  border: 1px solid #cbd5e0;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #0b2c4d;
+}
