@@ -221,11 +221,11 @@ footer {
 @media (max-width: 768px) {
 
   .main-logo {
-    height: 64px;
+    height: 90px;
   }
 
   .logo-center h1 {
-    font-size: 26px;
+    font-size: 34px;
   }
 
   .tab-nav {
