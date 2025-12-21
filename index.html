@@ -93,6 +93,18 @@
 <footer>
   © 2025 CoreCircuits | Ahmedabad | info@corecircuits.in
 </footer>
+<script>
+function openTab(tabId) {
+  const tabs = document.querySelectorAll('.tab-content');
+  const links = document.querySelectorAll('.tab-link');
+
+  tabs.forEach(tab => tab.classList.remove('active'));
+  links.forEach(link => link.classList.remove('active'));
+
+  document.getElementById(tabId).classList.add('active');
+  event.target.classList.add('active');
+}
+</script>
 
 </body>
 </html>
