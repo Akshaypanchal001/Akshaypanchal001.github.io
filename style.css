@@ -127,6 +127,10 @@ footer {
   max-width: 1000px;
   margin: auto;
   padding: 50px 20px;
+  background: #ffffff;
+  border-radius: 10px;
+}
+
 }
 
 .tab-content {
