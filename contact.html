@@ -16,45 +16,66 @@
   </nav>
 </header>
 
-<div class="container">
+<div class="container contact-section">
+
   <h1>Contact / Request a Quote</h1>
 
-  <p>
-    Please contact us for PCB design, manufacturing, or assembly requirements.
-    You can email us directly or submit the form below.
-  </p>
+  <div class="contact-grid">
 
-  <p>
-    <strong>Email:</strong> info@corecircuits.in<br>
-    <strong>Location:</strong> Ahmedabad, India
-  </p>
+    <!-- LEFT SIDE : INFO -->
+    <div class="contact-info">
+      <p>
+        Please contact us for PCB design, manufacturing, or assembly requirements.
+        Upload your Gerber, BOM, schematic, or ZIP files and our team will respond quickly.
+      </p>
 
-  <h2>Send Us Your Requirement</h2>
-<form id="contactForm">
+      <p>
+        <strong>Email:</strong> info@corecircuits.in<br>
+        <strong>Location:</strong> Ahmedabad, India
+      </p>
 
-  <input type="hidden" name="_subject" value="New PCB Enquiry – CoreCircuits Website">
+      <ul>
+        <li>✔ PCB Design</li>
+        <li>✔ PCB Manufacturing</li>
+        <li>✔ PCB Assembly</li>
+        <li>✔ Quick Turnaround</li>
+      </ul>
+    </div>
 
-  <label>Your Name</label>
-  <input type="text" name="name" required>
+    <!-- RIGHT SIDE : FORM -->
+    <div class="contact-form">
+      <h2>Send Us Your Requirement</h2>
 
-  <label>Your Email</label>
-  <input type="email" name="email" required>
+      <form id="contactForm">
 
-  <label>Your Message</label>
-  <textarea name="message" rows="5"
-    placeholder="Please mention quantity, layers, material, finish, timeline"></textarea>
+        <input type="hidden" name="_subject"
+          value="New PCB Enquiry – CoreCircuits Website">
 
-  <label>Upload PCB Files</label>
-  <input type="file" name="attachment" multiple
-    accept=".zip,.rar,.pdf,.xls,.xlsx,.csv,.txt,.png,.jpg,.jpeg,.sch">
+        <label>Your Name</label>
+        <input type="text" name="name" required>
 
-  <small>
-    Allowed: Gerber (ZIP), BOM, Pick & Place, Schematic, Images (Max ~10MB)
-  </small>
+        <label>Your Email</label>
+        <input type="email" name="email" required>
 
-  <button type="submit">Send Message</button>
-</form>
+        <label>Your Message</label>
+        <textarea name="message" rows="5"
+          placeholder="Please mention quantity, layers, material, finish, timeline"></textarea>
+
+        <label>Upload PCB Files</label>
+        <input type="file" name="attachment" multiple
+          accept=".zip,.rar,.pdf,.xls,.xlsx,.csv,.txt,.png,.jpg,.jpeg,.sch">
+
+        <small>
+          Allowed: Gerber (ZIP), BOM, Pick & Place, Schematic, Images (Max ~10MB)
+        </small>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+  </div>
 </div>
+
 <footer>
   © 2025 CoreCircuits | Ahmedabad | info@corecircuits.in
 </footer>
