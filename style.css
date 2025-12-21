@@ -298,3 +298,33 @@ footer {
   font-weight: 600;
   color: #0b2c4d;
 }
+/* =========================
+   Certifications Strip
+========================= */
+
+.cert-strip {
+  margin-top: 40px;
+  padding: 25px 0;
+  background: #f9fbfd;
+  border-top: 1px solid #e2e8f0;
+}
+
+.cert-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.cert-container img {
+  height: 40px;
+  opacity: 0.85;
+  transition: opacity 0.2s ease;
+}
+
+.cert-container img:hover {
+  opacity: 1;
+}
