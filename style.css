@@ -93,7 +93,14 @@ footer {
   justify-content: center;
   gap: 40px;
   margin-top: 10px;
+
+  position: sticky;
+  top: 0;
+  background: #f7f9fc;
+  padding: 14px 0;
+  z-index: 100;
 }
+
 
 .tab-link {
   background: none;
