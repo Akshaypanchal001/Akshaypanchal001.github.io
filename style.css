@@ -150,6 +150,50 @@ footer {
   color: #ffffff;
   font-size: 14px;
 }
+/* ================================
+   Contact / Request Quote Section
+================================ */
+
+.contact-section {
+  padding: 80px 0;
+}
+
+.contact-grid {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+.contact-info {
+  flex: 1;
+}
+
+.contact-form {
+  flex: 1;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .contact-grid {
+    flex-direction: column;
+  }
+}
+
 
 /* =========================
    ANIMATIONS
