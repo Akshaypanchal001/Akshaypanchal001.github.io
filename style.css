@@ -41,9 +41,10 @@ body {
 }
 
 .logo-center h1 {
-  margin-top: 15px;
-  font-size: 32px;
-  font-weight: 600;
+  margin-top: 10px;
+  font-size: 52px;        /* BIG brand name */
+  font-weight: 800;      /* Strong presence */
+  letter-spacing: 1.5px;
   color: #0b2c4d;
 }
 
