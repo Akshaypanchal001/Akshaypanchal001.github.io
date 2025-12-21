@@ -31,11 +31,13 @@ body {
 }
 
 .main-logo {
-  height: 80px;
+  height: 140px;          /* BIG logo */
   width: auto;
-  background: #ffffff;
-  padding: 10px;
-  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  background: transparent;
+}
+
 }
 
 .logo-center h1 {
@@ -44,6 +46,7 @@ body {
   font-weight: 600;
   color: #0b2c4d;
 }
+
 
 /* =========================
    TAB NAVIGATION
