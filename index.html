@@ -64,7 +64,7 @@
   © 2025 CoreCircuits | Ahmedabad | info@corecircuits.in
 </footer>
 <script>
-function openTab(tabId) {
+function openTab(tabId, button) {
   const tabs = document.querySelectorAll('.tab-content');
   const links = document.querySelectorAll('.tab-link');
 
@@ -72,9 +72,10 @@ function openTab(tabId) {
   links.forEach(link => link.classList.remove('active'));
 
   document.getElementById(tabId).classList.add('active');
-  event.target.classList.add('active');
+  button.classList.add('active');
 }
 </script>
+
 
 </body>
 </html>
