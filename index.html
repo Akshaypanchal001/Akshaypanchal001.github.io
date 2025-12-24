@@ -20,20 +20,41 @@ content="PCB design services, PCB manufacturing services, PCB assembly services,
     <h1>CoreCircuits</h1>
   </div>
 
-  <nav class="tab-nav">
-    <button class="tab-link active" onclick="openTab('design',this)">Home</button>
-<button class="tab-link" onclick="openTab('design', this)">PCB Design</button>
-<button class="tab-link" onclick="openTab('manufacturing', this)">PCB Manufacturing</button>
-<button class="tab-link" onclick="openTab('assembly', this)">PCB Assembly</button>
-<button class="tab-link" onclick="openTab('contact', this)">Contact</button>
+<nav class="tab-nav">
+  <button class="tab-link active" onclick="openTab('home', this)">Home</button>
+  <button class="tab-link" onclick="openTab('design', this)">PCB Design</button>
+  <button class="tab-link" onclick="openTab('manufacturing', this)">PCB Manufacturing</button>
+  <button class="tab-link" onclick="openTab('assembly', this)">PCB Assembly</button>
+  <button class="tab-link" onclick="openTab('contact', this)">Contact</button>
+</nav>
 
-  </nav>
 </header>
 
 <!-- TAB CONTENT -->
 <main class="tab-content-area">
+<section id="home" class="tab-content active">
 
- <section id="design" class="tab-content active">
+  <h2>PCB Design, Manufacturing & Assembly Services</h2>
+
+  <p>
+    CoreCircuits is a technology-driven PCB solutions provider offering
+    end-to-end services including PCB design, precision manufacturing,
+    and turnkey assembly for global customers.
+  </p>
+
+  <p>
+    We support startups, OEMs, and enterprises with high-reliability
+    solutions across industrial, automotive, medical, and consumer
+    electronics.
+  </p>
+
+  <a class="cta-btn" onclick="openTab('contact', document.querySelector('.tab-link:last-child'))">
+    Request a Quote
+  </a>
+
+</section>
+
+ <section id="design" class="tab-content">
 
   <h2>PCB Design Services</h2>
 
