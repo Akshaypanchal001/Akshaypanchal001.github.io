@@ -1,259 +1,120 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>CoreCircuits | PCB Design, Manufacturing & Assembly</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoreCircuits - Important Information</title>
+    <style>
+        /* Reset basic styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-  <meta name="description"
-    content="CoreCircuits provides expert PCB design, PCB manufacturing, and PCB assembly (PCBA) services including high-speed, RF, HDI, rigid-flex and turnkey PCBA solutions worldwide." />
+        body, html {
+            height: 100%;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f0f2f5; /* Light grey background */
+        }
 
-  <meta name="keywords"
-    content="PCB design services, PCB manufacturing services, PCB assembly services, HDI PCB, RF PCB, SMT PCBA, CNF PCB fabrication" />
+        /* Flexbox to center the card on the screen */
+        .page-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+        }
 
-  <link rel="stylesheet" href="style.css">
+        /* The actual card container */
+        .info-card {
+            background-color: #ffffff;
+            width: 100%;
+            max-width: 500px;
+            padding: 40px 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        /* Logo styling */
+        .logo-container img {
+            max-width: 150px; /* Adjusts the size of your logo */
+            margin-bottom: 20px;
+        }
+
+        /* Typography */
+        .card-title {
+            color: #333333;
+            font-size: 24px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .card-description {
+            color: #666666;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        /* Button styling */
+        .action-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .btn {
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .primary-btn {
+            background-color: #0066cc; /* You can change this to match your logo's blue */
+            color: #ffffff;
+        }
+
+        .primary-btn:hover {
+            background-color: #0052a3;
+        }
+
+        .secondary-btn {
+            background-color: #e4e6eb;
+            color: #333333;
+        }
+
+        .secondary-btn:hover {
+            background-color: #d8dadf;
+        }
+    </style>
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header class="site-header">
-    <div class="logo-center">
-      <img src="logo.png" alt="CoreCircuits Logo" class="main-logo">
-      <h1>CoreCircuits</h1>
-    </div>
-
-    <nav class="tab-nav">
-      <button class="tab-link active" onclick="openTab('home', this)">Home</button>
-      <button class="tab-link" onclick="openTab('design', this)">PCB Design</button>
-      <button class="tab-link" onclick="openTab('manufacturing', this)">PCB Manufacturing</button>
-      <button class="tab-link" onclick="openTab('assembly', this)">PCB Assembly</button>
-      <button class="tab-link" onclick="openTab('contact', this)">Contact</button>
-    </nav>
-  </header>
-
-  <!-- TAB CONTENT -->
-  <main class="tab-content-area">
-
-    <!-- HOME -->
-    <section id="home" class="tab-content active">
-      <h2>Complete PCB Services — End-to-End</h2>
-
-      <p>
-        CoreCircuits offers full-spectrum PCB services: professional design,
-        precise manufacturing, and reliable assembly. We serve startups to global OEMs
-        with quality, speed, and technical excellence.
-      </p>
-
-      <p>
-        From concept to production-ready boards, your project is handled
-        with expert care and manufacturing-ready results.
-      </p>
-
-      <a class="cta-btn" onclick="openTab('contact', document.querySelector('.tab-link:last-child'))">
-        Request a Quote
-      </a>
-
-      <!-- Optional Hero Image -->
-      <div class="hero-img">
-        <img src="images/pcb-workflow.jpg"
-          alt="PCB workflow concept" style="width:100%; border-radius:8px; margin-top:30px;">
-      </div>
-    </section>
-
-    <!-- PCB DESIGN -->
-    <section id="design" class="tab-content">
-      <h2>PCB Design Services</h2>
-
-      <div class="section-img">
-        <img src="images/pcb-design.jpg" alt="PCB Design" style="width:100%; border-radius:8px;">
-      </div>
-
-      <p>
-        Our PCB design team delivers optimized circuit boards that are manufacturable,
-        performance-ready, and production-validated.
-      </p>
-
-      <div class="design-doc">
-        <h3>Core Capabilities</h3>
-        <ul>
-          <li>Schematic Capture & Entry</li>
-          <li>PCB Layout & Routing</li>
-          <li>Multi-layer & Rigid-Flex Design</li>
-          <li>Library Management (IPC compliant)</li>
-          <li>Reverse Engineering & Legacy Conversion</li>
-        </ul>
-
-        <h3>Advanced Technical Expertise</h3>
-        <ul>
-          <li>High-Speed Digital (DDR / PCIe / USB3+)</li>
-          <li>RF & Microwave PCB Design</li>
-          <li>HDI & Microvia Structures</li>
-          <li>Power Electronics & Thermal Optimization</li>
-          <li>Signal & Power Integrity Analysis</li>
-        </ul>
-
-        <h3>Deliverables</h3>
-        <ul>
-          <li>Gerber X2, ODB++, Drill Files</li>
-          <li>Pick & Place & Assembly Data</li>
-          <li>Schematic PDF, 3D Models, Stack-up Reports</li>
-        </ul>
-      </div>
-
-      <a class="cta-btn" onclick="openTab('contact', document.querySelector('.tab-link:last-child'))">
-        Request a PCB Design Quote
-      </a>
-    </section>
-
-    <!-- PCB MANUFACTURING -->
-    <section id="manufacturing" class="tab-content">
-      <h2>PCB Manufacturing Services</h2>
-
-      <div class="section-img">
-        <img src="images/pcb-manufacturing.jpg" alt="PCB Manufacturing" style="width:100%; border-radius:8px;">
-      </div>
-
-      <p>
-        We fabricate high-quality printed circuit boards with controlled processes
-        and traceable materials — from rapid prototypes to production volumes.
-      </p>
-
-      <div class="manufacture-doc">
-        <h3>Core Capabilities</h3>
-        <ul>
-          <li>CAM Engineering & DFM Checks</li>
-          <li>Precision Fabrication (HDI / Heavy Copper)</li>
-          <li>Impedance Controlled Stack-ups</li>
-          <li>Panelization & Tooling Optimization</li>
-        </ul>
-
-        <h3>Technical Specifications</h3>
-        <ul>
-          <li>Layers: 1 to 30+</li>
-          <li>Materials: FR4, Rogers, Polyimide, Aluminum Core</li>
-          <li>Finishes: ENIG, HASL, Silver / Tin / Gold</li>
-          <li>QA: Flying Probe, AOI, X-section Analysis</li>
-        </ul>
-      </div>
-
-      <a class="cta-btn" onclick="openTab('contact', document.querySelector('.tab-link:last-child'))">
-        Request a Manufacturing Quote
-      </a>
-    </section>
-
-    <!-- PCB ASSEMBLY -->
-    <section id="assembly" class="tab-content">
-      <h2>PCB Assembly (PCBA) Services</h2>
-
-      <div class="section-img">
-        <img src="images/pcb-assembly.jpg" alt="PCB Assembly" style="width:100%; border-radius:8px;">
-      </div>
-
-      <p>
-        We provide full-service PCB assembly — from BOM sourcing & verification
-        to placement, soldering, inspection, and test-ready boards.
-      </p>
-
-      <div class="assembly-doc">
-        <h3>Core Capabilities</h3>
-        <ul>
-          <li>BOM Management & Component Sourcing</li>
-          <li>High-speed SMT Pick & Place</li>
-          <li>Centroid & XY File Engineering</li>
-          <li>Through-hole & Hybrid Assembly</li>
-        </ul>
-
-        <h3>Tech Specs & Test Support</h3>
-        <ul>
-          <li>Assembly: Rigid, Flex, Rigid-Flex</li>
-          <li>Soldering: RoHS & Leaded Reflow / Wave</li>
-          <li>Inspection: 3D AOI, X-Ray for BGA</li>
-          <li>Function Testing / IC Programming</li>
-        </ul>
-      </div>
-
-      <a class="cta-btn" onclick="openTab('contact', document.querySelector('.tab-link:last-child'))">
-        Request an Assembly Quote
-      </a>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="tab-content">
-      <div class="contact-section">
-        <div class="contact-grid">
-
-          <div class="contact-info">
-            <h2>Contact / Request a Quote</h2>
-            <p>
-              Upload your Gerber files, BOM, schematics, or ZIP files.
-              Our team will review and get back to you quickly.
+    <div class="page-wrapper">
+        <div class="info-card">
+            
+            <div class="logo-container">
+                <img src="logo.png" alt="CoreCircuits Logo">
+            </div>
+            
+            <h1 class="card-title">Site Under Maintenance</h1>
+            
+            <p class="card-description">
+                We are currently updating our website to serve you better. For any urgent PCB manufacturing or assembly inquiries, please reach out to us directly.
             </p>
-
-            <p>
-              <strong>Email:</strong> info@corecircuits.in<br>
-              <strong>Location:</strong> Ahmedabad, India
-            </p>
-          </div>
-
-          <div class="contact-form">
-            <form id="contactForm">
-              <input type="hidden" name="_subject" value="New PCB Enquiry – CoreCircuits Website">
-
-              <label>Your Name</label>
-              <input type="text" name="name" required>
-
-              <label>Your Email</label>
-              <input type="email" name="email" required>
-
-              <label>Your Message</label>
-              <textarea name="message" rows="5"
-                placeholder="Quantity, layers, material, finish, timeline"></textarea>
-
-              <label>Upload PCB Files</label>
-              <input type="file" name="attachment" multiple
-                accept=".zip,.rar,.pdf,.xls,.xlsx,.csv,.txt,.png,.jpg,.jpeg,.sch">
-
-              <small>
-                Allowed: Gerber (ZIP), BOM, Pick & Place, Schematic (Max ~10MB)
-              </small>
-
-              <button type="submit" class="cta-btn">Send Request</button>
-            </form>
-          </div>
-
+            
+            <div class="action-buttons">
+                <a href="contact.html" class="btn primary-btn">Contact Us</a>
+                <a href="mailto:info@corecircuits.in" class="btn secondary-btn">Email Us</a>
+            </div>
         </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- CERTIFICATIONS STRIP -->
-  <section class="cert-strip">
-    <div class="cert-container">
-      <span>ISO 9001</span>
-      <span>IPC-2221</span>
-      <span>IPC-7351</span>
-      <span>RoHS</span>
-      <span>REACH</span>
-      <span>UL Ready</span>
     </div>
-  </section>
-
-  <footer>
-    © 2025 CoreCircuits | Ahmedabad | info@corecircuits.in
-  </footer>
-
-  <!-- SCRIPTS -->
-  <script>
-    function openTab(tabId, button) {
-      const tabs = document.querySelectorAll('.tab-content');
-      const links = document.querySelectorAll('.tab-link');
-
-      tabs.forEach(tab => tab.classList.remove('active'));
-      links.forEach(link => link.classList.remove('active'));
-
-      document.getElementById(tabId).classList.add('active');
-      if (button) button.classList.add('active');
-    }
-  </script>
 
 </body>
 </html>
