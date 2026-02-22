@@ -142,3 +142,6 @@ footer {
   padding: 30px;
   color: var(--muted);
 }
+.logo img {
+  height: 60px;
+}
