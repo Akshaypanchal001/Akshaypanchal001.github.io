@@ -1,335 +1,144 @@
-/* =========================
-   GLOBAL RESET & BASE
-========================= */
+:root {
+  --bg: #050814;
+  --card: #0b122a;
+  --accent: #00d4ff;
+  --text: #e6ebff;
+  --muted: #a3aed0;
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: #f5f7fa;
-  color: #1a202c;
-  line-height: 1.6;
+  background: var(--bg);
+  color: var(--text);
 }
 
-/* =========================
-   HEADER
-========================= */
-
-.site-header {
-  background: #f9fbfd;
-  text-align: center;
-  padding: 40px 20px 20px;
-  border-bottom: 1px solid #e2e8f0;
+/* NAVBAR */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: rgba(5,8,20,0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #121a3a;
+  z-index: 10;
 }
 
-.logo-center {
-  margin-bottom: 25px;
-}
-
-.main-logo {
-  height: 170px;          /* BIG logo */
-  width: auto;
-  display: block;
-  margin: 0 auto;
-  background: transparent;
-}
-
-}
-
-.logo-center h1 {
-  margin-top: 8px;
-  font-size: 56px;        /* BIG brand name */
-  font-weight: 800;      /* Strong presence */
-  letter-spacing: 2px;
-  color: #0b2c4d;
-}
-
-
-/* =========================
-   TAB NAVIGATION
-========================= */
-
-.tab-nav {
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 18px;
   display: flex;
-  justify-content: center;
-  gap: 40px;
-  margin-top: 10px;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.tab-link {
-  background: none;
-  border: none;
-  font-size: 18px;
-  font-weight: 600;
-  cursor: pointer;
-  color: #4a5568;
-  padding-bottom: 6px;
-  transition: color 0.2s ease;
-}
-
-.tab-link:hover {
-  color: #0b2c4d;
-}
-
-.tab-link.active {
-  color: #0b2c4d;
-  border-bottom: 3px solid #0b2c4d;
-}
-
-/* =========================
-   TAB CONTENT SYSTEM
-   (MOST IMPORTANT PART)
-========================= */
-
-.tab-content-area {
-  max-width: 1000px;
-  margin: 40px auto;
-  padding: 40px 30px;
-  background: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
-}
-
-/* Hide all tabs by default */
-.tab-content {
-  display: none;
-  animation: fadeIn 0.35s ease-in-out;
-}
-
-/* Show only active tab */
-.tab-content.active {
-  display: block;
-}
-
-/* =========================
-   TAB CONTENT STYLING
-========================= */
-
-.tab-content h2 {
-  color: #0b2c4d;
-  margin-bottom: 15px;
-  font-size: 24px;
-}
-
-.tab-content p {
-  font-size: 16px;
-  color: #2d3748;
-  max-width: 800px;
-}
-
-/* =========================
-   CTA BUTTON
-========================= */
-
-.cta-btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 24px;
-  background: #0b2c4d;
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 15px;
-  font-weight: 600;
-  border-radius: 6px;
-  transition: background 0.2s ease;
-}
-
-.cta-btn:hover {
-  background: #083055;
-}
-
-/* =========================
-   FOOTER
-========================= */
-
-footer {
-  margin-top: 60px;
-  padding: 20px;
-  text-align: center;
-  background: #0b2c4d;
-  color: #ffffff;
-  font-size: 14px;
-}
-/* ================================
-   Contact / Request Quote Section
-================================ */
-
-.contact-section {
-  padding: 80px 0;
-}
-
-.contact-grid {
-  display: flex;
-  gap: 50px;
-  align-items: flex-start;
-}
-
-.contact-info {
-  flex: 1;
-}
-
-.contact-form {
-  flex: 1;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  box-sizing: border-box;
-}
-
-.contact-form button {
-  width: 100%;
-  padding: 12px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-/* Mobile Responsive */
-@media (max-width: 768px) {
-  .contact-grid {
-    flex-direction: column;
-  }
-}
-
-
-/* =========================
-   ANIMATIONS
-========================= */
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(6px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* =========================
-   MOBILE RESPONSIVE
-========================= */
-
-@media (max-width: 768px) {
-
-  .main-logo {
-    height: 95px;
-  }
-
-  .logo-center h1 {
-    font-size: 34px;
-    letter-spacing: 1px;
-  }
-
-  .tab-nav {
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-
-  .tab-link {
-    font-size: 16px;
-  }
-
-  .tab-content-area {
-    margin: 30px 15px;
-    padding: 30px 20px;
-  }
-
-  footer {
-    font-size: 13px;
-  }
-}
-/* =========================
-   PCB Design – Document Style
-========================= */
-
-.design-doc h3 {
-  margin-top: 30px;
-  margin-bottom: 12px;
-  font-size: 18px;
-  color: #1a202c;
-}
-
-.design-doc ul {
+nav a {
+  color: var(--muted);
   margin-left: 20px;
+  text-decoration: none;
+}
+
+.nav-btn {
+  border: 1px solid var(--accent);
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+/* HERO */
+.hero {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 56px;
+  font-weight: 800;
+}
+
+.hero h1 span {
+  color: var(--accent);
+}
+
+.badge {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: #0d1b3d;
+  color: var(--accent);
   margin-bottom: 20px;
 }
 
-.design-doc li {
-  margin-bottom: 10px;
-  line-height: 1.6;
-  color: #2d3748;
+.hero-buttons {
+  margin-top: 30px;
 }
 
-.design-doc strong {
-  font-weight: 600;
-  color: #000000;
+.btn {
+  padding: 14px 28px;
+  border-radius: 10px;
+  text-decoration: none;
+  margin: 0 8px;
 }
-/* =========================
-   Certifications Strip
-========================= */
 
-.cert-strip {
+.primary {
+  background: var(--accent);
+  color: #000;
+}
+
+.secondary {
+  border: 1px solid var(--accent);
+  color: var(--accent);
+}
+
+/* SECTIONS */
+.section {
+  padding: 90px 10%;
+}
+
+.alt {
+  background: #070c1f;
+}
+
+.center-text {
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+}
+
+/* CARDS */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+  gap: 25px;
   margin-top: 40px;
-  padding: 20px 0;
-  background: #f9fbfd;
-  border-top: 1px solid #e2e8f0;
-  border-bottom: 1px solid #e2e8f0;
 }
 
-.cert-container {
-  max-width: 1000px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+.card {
+  background: var(--card);
+  padding: 30px;
+  border-radius: 16px;
+  color: var(--text);
+  text-decoration: none;
+  transition: 0.3s;
+  opacity: 0;
+  transform: translateY(30px);
 }
 
-.cert-container span {
-  padding: 8px 16px;
-  background: #ffffff;
-  border: 1px solid #cbd5e0;
-  border-radius: 6px;
-  font-size: 14px;
-  font-weight: 600;
-  color: #0b2c4d;
-}
-/* =========================
-   Certifications Strip
-========================= */
-
-.cert-strip {
-  margin-top: 40px;
-  padding: 25px 0;
-  background: #f9fbfd;
-  border-top: 1px solid #e2e8f0;
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 40px rgba(0,212,255,0.15);
 }
 
-.cert-container {
-  max-width: 1000px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-
-.cert-container img {
-  height: 40px;
-  opacity: 0.85;
-  transition: opacity 0.2s ease;
-}
-
-.cert-container img:hover {
-  opacity: 1;
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px;
+  color: var(--muted);
 }
