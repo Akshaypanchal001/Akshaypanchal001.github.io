@@ -142,6 +142,8 @@ footer {
   padding: 30px;
   color: var(--muted);
 }
+
 .logo img {
-  height: 60px;
+  height: 42px;      /* perfect navbar size */
+  width: auto;
 }
