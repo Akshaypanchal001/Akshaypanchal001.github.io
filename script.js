@@ -1,11 +1,13 @@
 const elements = document.querySelectorAll(".card, .stats div");
 
-function reveal() {
-  elements.forEach(el => {
+function revealOnScroll() {
+  elements.forEach((el, index) => {
     const top = el.getBoundingClientRect().top;
-    if (top < window.innerHeight - 50) {
-      el.style.opacity = "1";
-      el.style.transform = "translateY(0)";
+    if (top < window.innerHeight - 80) {
+      setTimeout(() => {
+        el.style.opacity = "1";
+        el.style.transform = "translateY(0)";
+      }, index * 120);
     }
   });
 }
@@ -16,5 +18,5 @@ elements.forEach(el => {
   el.style.transition = "all 0.6s ease";
 });
 
-window.addEventListener("scroll", reveal);
-window.addEventListener("load", reveal);
+window.addEventListener("scroll", revealOnScroll);
+window.addEventListener("load", revealOnScroll);
