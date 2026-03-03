@@ -1,12 +1,12 @@
-const revealItems = document.querySelectorAll(".card");
+const cards = document.querySelectorAll(".card");
 
 function reveal(){
-revealItems.forEach((el,i)=>{
-const top = el.getBoundingClientRect().top;
+cards.forEach((card,i)=>{
+const top = card.getBoundingClientRect().top;
 if(top < window.innerHeight - 60){
 setTimeout(()=>{
-el.style.opacity="1";
-el.style.transform="translateY(0)";
+card.style.opacity="1";
+card.style.transform="translateY(0)";
 }, i*150);
 }
 });
