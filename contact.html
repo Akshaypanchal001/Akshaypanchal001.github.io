@@ -1,63 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Contact | CoreCircuits</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | CoreCircuits</title>
 
-  <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- NAVBAR -->
 <header class="navbar">
   <div class="nav-container">
-    <div class="logo">
-      <img src="logo.png" alt="CoreCircuits">
-    </div>
+    <a href="index.html" class="logo-text">
+      <span class="logo-icon">▣</span>
+      Core<span>Circuits</span>
+    </a>
+
     <nav>
       <a href="index.html">Home</a>
-      <a href="pcb-design.html">PCB Design</a>
-      <a href="pcb-manufacturing.html">Manufacturing</a>
-      <a href="pcb-assembly.html">Assembly</a>
+      <a href="index.html#services">Services</a>
       <a href="contact.html" class="nav-btn">Contact</a>
     </nav>
   </div>
 </header>
 
-<!-- CONTACT SECTION -->
-<section class="section">
-  <h2>Contact Us</h2>
-  <p class="center-text">
-    Tell us about your project and we’ll get back to you shortly.
-  </p>
+<section class="section contact-premium">
+  <div class="contact-wrapper">
 
-  <div class="contact-container">
-    <form class="contact-form" action="#" method="POST">
+    <div class="contact-info">
+      <h2>Let’s Build Something Exceptional</h2>
+      <p>
+        Share your project requirements and our engineering team will respond within 24 hours.
+      </p>
+      <div class="info-item">📧 info@corecircuits.in</div>
+      <div class="info-item">📍 India</div>
+      <div class="info-item">⏱ Engineering Support</div>
+    </div>
 
-      <div class="form-group">
-        <label>Your Name</label>
-        <input type="text" name="name" required>
-      </div>
+    <div class="contact-card">
+      <form>
+        <div class="form-group">
+          <label>Name</label>
+          <input type="text" required>
+        </div>
 
-      <div class="form-group">
-        <label>Your Email</label>
-        <input type="email" name="email" required>
-      </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" required>
+        </div>
 
-      <div class="form-group">
-        <label>Your Message</label>
-        <textarea name="message" rows="5" required></textarea>
-      </div>
+        <div class="form-group">
+          <label>Project Details</label>
+          <textarea rows="5" required></textarea>
+        </div>
 
-      <button type="submit" class="btn primary">Send Message</button>
+        <button class="btn primary"><span>Send Message</span></button>
+      </form>
+    </div>
 
-    </form>
   </div>
 </section>
 
 <footer>
-  © 2026 CoreCircuits · All Rights Reserved
+  © 2026 CoreCircuits · Precision Electronics Engineering
 </footer>
 
 <script src="script.js"></script>
