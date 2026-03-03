@@ -1,3 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact | CoreCircuits</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
 <header class="navbar">
   <div class="nav-container">
     <div class="logo">
@@ -12,35 +24,42 @@
     </nav>
   </div>
 </header>
-<form action="https://formsubmit.co/info@corecircuits.in"
-      method="POST"
-      enctype="multipart/form-data">
 
-  <!-- FormSubmit settings -->
-  <input type="hidden" name="_subject"
-         value="New PCB Enquiry – CoreCircuits Website">
-  <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_template" value="table">
-  <!-- Optional redirect -->
-  <!-- <input type="hidden" name="_next" value="thank-you.html"> -->
+<!-- CONTACT SECTION -->
+<section class="section">
+  <h2>Contact Us</h2>
+  <p class="center-text">
+    Tell us about your project and we’ll get back to you shortly.
+  </p>
 
-  <label>Your Name</label>
-  <input type="text" name="name" required>
+  <div class="contact-container">
+    <form class="contact-form" action="#" method="POST">
 
-  <label>Your Email</label>
-  <input type="email" name="email" required>
+      <div class="form-group">
+        <label>Your Name</label>
+        <input type="text" name="name" required>
+      </div>
 
-  <label>Your Message</label>
-  <textarea name="message" rows="5"
-    placeholder="Please mention quantity, layers, material, finish, timeline"></textarea>
+      <div class="form-group">
+        <label>Your Email</label>
+        <input type="email" name="email" required>
+      </div>
 
-  <label>Upload PCB Files</label>
-  <input type="file" name="attachment" multiple
-    accept=".zip,.rar,.pdf,.xls,.xlsx,.csv,.txt,.png,.jpg,.jpeg,.sch">
+      <div class="form-group">
+        <label>Your Message</label>
+        <textarea name="message" rows="5" required></textarea>
+      </div>
 
-  <small>
-    Allowed: Gerber (ZIP), BOM, Pick & Place, Schematic, Images (Max ~10MB)
-  </small>
+      <button type="submit" class="btn primary">Send Message</button>
 
-  <button type="submit">Send Message</button>
-</form>
+    </form>
+  </div>
+</section>
+
+<footer>
+  © 2026 CoreCircuits · All Rights Reserved
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
